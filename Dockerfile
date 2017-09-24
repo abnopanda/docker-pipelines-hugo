@@ -3,14 +3,10 @@ MAINTAINER Karel Bemelmans <mail@karelbemelmans.com>
 
 # Install packages needed to build
 RUN apk add --update --no-cache \
-    bash \
     ca-certificates \
     curl \
-    python \
-    py-pip \
-    wget \
-  && pip install --upgrade pip \
-  && pip install -U awscli
+    rsync \
+    openssh
 
 # Install hugo.
 ARG HUGO_VERSION=0.27.1
