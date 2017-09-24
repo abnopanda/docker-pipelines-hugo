@@ -13,7 +13,7 @@ RUN apk add --update --no-cache \
   && pip install -U awscli
 
 # Install hugo.
-ARG HUGO_VERSION=v0.27.1
+ARG HUGO_VERSION=0.27.1
 ARG HUGO_SHA256=0e6cb63e6aca10277b96023c4fed97ac3a3e922d12f073b8a80630946fe289e7
 
 # Rember sha256sum (and md5sum) expect 2 spaces in front of the filename on alpine...
